@@ -87,10 +87,51 @@
 
         .btn-jj-primary { background-color: var(--sunset-orange); color: white; font-weight: bold; border: none; }
         
+           #categories .btn-jj-primary { background-color: var(--sunset-orange); color: white; font-weight: bold; border: none; 
+border-radius: 50px !important; padding: 14px 40px !important;
+            
+            text-transform: uppercase; font-weight: bold; border: none;
+            box-shadow: 0 8px 20px rgba(36, 123, 74, 0.3); transition: 0.3s;
+}
+        
         .social-icons .text-success {
         font-size: 1.6rem;
         margin: 4%;
         }
+        
+           .x-small { font-size: 0.75rem; }
+    .btn-check:checked + .btn-outline-danger {
+        background-color: var(--hibiscus-red);
+        color: white;
+    }
+    .btn-group .btn {
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    
+        .floating-whatsapp {
+        position: fixed;
+        bottom: 150px; /* Positions it above your Home/Cart buttons */
+        left: 20px;
+        background-color: #25D366; /* WhatsApp Green */
+        color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        z-index: 1100;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        text-decoration: none;
+        transition: transform 0.3s ease;
+    }
+    .floating-whatsapp:hover {
+        transform: scale(1.1);
+        color: white;
+    }
     </style>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#category-nav">
@@ -141,9 +182,9 @@
         
         <div class="container" data-aos="fade-up">
              <img src="images/jj.png" alt="Logo" class="logo-img mx-auto img-fluid rounded-circle mb-4">
-             <h1 class="display-3 fw-bold text-white mb-2" style="text-shadow: 2px 4px 15px rgba(0,0,0,0.6);">Taste the Spirit of the Islands</h1>
-             <p class="lead fw-bold text-white mb-5">100% Cold-Pressed Tropical Vitality</p>
-             <a href="#categories" class="btn btn-caribbean">Explore the Menu</a>
+             <h1 class="display-3 fw-bold text-white mb-2" style="text-shadow: 2px 4px 15px rgba(0,0,0,0.6);">"A Day Without Us Is A Day Without The Best"</h1>
+             <p class="lead fw-bold text-white mb-5">100% Tropical Juices</p>
+             <a href="#categories" class="btn btn-caribbean mb-4">Explore the Menu</a>
         </div>
     </header>
 
@@ -158,44 +199,19 @@
             <div class="row align-items-center">
                 <div class="col-md-6" data-aos="fade-right">
                     <h2 class="mb-4">Our Island <span class="tropical-accent">Mission</span></h2>
-                    <p class="lead">At J&J Fresh Juices, we bring the healing power of tropical fruits to your daily routine. We believe in the synergy of fresh citrus and natural hibiscus to revitalize the body.</p>
+                    <p class="lead">“Our mission is to bring refreshing island flavors and quality products to our community while creating memorable experiences, supporting local culture, and serving every customer with warmth, excellence, and Caribbean hospitality.”</p>
                 </div>
                 <div class="col-md-6" data-aos="fade-left">
                     <div class="p-5 rounded-4 shadow-sm" style="background: var(--sand-creme); border-left: 10px solid var(--sunset-orange);">
                         <h4 class="fw-bold">Island Wisdom</h4>
-                        <p class="mb-0">Our Hibiscus blends contain 3x the antioxidants of green tea. It's the "Heart of the Island" in every bottle.</p>
+                        <p class="mb-0">Island wisdom text.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    
-    <section id="benefits" class="content-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6" data-aos="fade-up">
-                    <h2 class="mb-4">The <span class="tropical-accent">Cold-Press</span> Difference</h2>
-                    <p>Our hydraulic press uses <strong>thousands of pounds of pressure</strong> to extract every drop of liquid gold without heat, preserving 100% of live enzymes.</p>
-                    <div class="table-responsive mt-4 shadow-sm rounded border bg-white">
-                        <table class="table mb-0">
-                            <thead class="bg-dark text-white">
-                                <tr><th>Feature</th><th>J&J Fresh</th><th>Store Bought</th></tr>
-                            </thead>
-                            <tbody>
-                                <tr><td>Process</td><td class="text-success fw-bold">Cold-Pressed</td><td>Heat Pasteurized</td></tr>
-                                <tr><td>Nutrients</td><td class="text-success fw-bold">Maximum</td><td>Degraded</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="col-lg-6 text-center" data-aos="zoom-in">
-                    <img src="images/jj.png" class="img-fluid mx-auto rounded-circle p-4 mt-4 shadow-lg" style="max-width: 100%;" alt="Juice Science">
-                </div>
-            </div>
-        </div>
-    </section>
-
+<!-- Contact -->
     <section id="sourcing" class="content-section" style="background-color: var(--sand-creme);">
         <div class="container text-center">
             <h2 class="mb-5" data-aos="fade-up">Our <span class="tropical-accent">Island Roots</span></h2>
@@ -203,74 +219,222 @@
                 <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
                     <div class="p-4 bg-white shadow-sm border-bottom border-success border-4 h-100">
                         <i class="fas fa-map-marker-alt fa-2x mb-3 text-danger"></i>
-                        <h5 class="fw-bold">St. Elizabeth, Jamaica</h5>
-                        <p class="small">Where we source our ginger and sorrel (hibiscus) for that authentic island kick.</p>
+                        <h5 class="fw-bold">St. James, Trinidad</h5>
+                        <p class="small">Where we source our fresh produce for that authentic island flavour you love.</p>
                     </div>
                 </div>
                 <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
                     <div class="p-4 bg-white shadow-sm border-bottom border-warning border-4 h-100">
                         <i class="fas fa-sun fa-2x mb-3 text-warning"></i>
-                        <h5 class="fw-bold">Tropical Belts</h5>
-                        <p class="small">Our pineapples are harvested at peak ripeness from coastal farms.</p>
+                        <h5 class="fw-bold">Tropical Freshness</h5>
+                        <p class="small">We hand pick the best fruits to bring you the best juices. </p>
                     </div>
                 </div>
                 <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
                     <div class="p-4 bg-white shadow-sm border-bottom border-primary border-4 h-100">
-                        <i class="fas fa-ship fa-2x mb-3 text-primary"></i>
-                        <h5 class="fw-bold">Small Batch Shipments</h5>
-                        <p class="small">Weekly flights ensure your juice was fruit only 48 hours ago.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="categories" class="content-section bg-white">
-        <div class="container">
-            <h2 class="text-center mb-5">Vibrant <span class="tropical-accent">Menu</span></h2>
-            <div class="row g-4 justify-content-center">
-                <div class="col-md-4" data-aos="fade-up">
-                    <div class="card category-card h-100">
-                        <div class="position-relative">
-                            <img src="images/jj.jpg" class="card-img-top" alt="Sunshine Punch">
-                            <span class="position-absolute top-0 end-0 m-3 badge bg-danger">Best Seller</span>
-                        </div>
-                        <div class="card-body p-4">
-                            <h5 class="fw-bold mb-1">Sunshine Punch</h5>
-                            <p class="small text-muted mb-3">Orange, Pineapple, Lime, Turmeric</p>
-                            <div class="bg-light p-3 rounded mb-3 border">
-                                <div class="form-check small mb-2">
-                                    <input class="form-check-input" type="radio" name="plan1" id="onetime1" checked>
-                                    <label class="form-check-label w-100 d-flex justify-content-between" for="onetime1">
-                                        <span>One-time</span> <span class="fw-bold">$8.99</span>
-                                    </label>
-                                </div>
-                                <div class="form-check small">
-                                    <input class="form-check-input" type="radio" name="plan1" id="sub1">
-                                    <label class="form-check-label w-100 d-flex justify-content-between text-success" for="sub1">
-                                        <span>Subscribe & Save</span> <span class="fw-bold">$7.64</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <button class="btn btn-caribbean w-100">Add to Box</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card category-card h-100">
-                        <img src="images/jj.jpg" class="card-img-top" alt="Hibiscus Glow">
-                        <div class="card-body p-4">
-                            <h5 class="fw-bold mb-1">Hibiscus Glow</h5>
-                            <p class="small text-muted mb-3">Sorrel, Ginger, Apple, Agave</p>
-                            <div class="bg-light p-3 rounded mb-3 border text-center small">Perfect for Heart Health</div>
-                            <button class="btn btn-caribbean w-100">Add to Box</button>
-                        </div>
+                        <i class="fas fa-road fa-2x mb-3 text-primary"></i>
+                        <h5 class="fw-bold">Convenience</h5>
+                        <p class="small">We bring the best to the stores near you.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     
+    <!-- Menu Categories -->
+
+<section id="categories" class="content-section bg-white">
+    <div class="container">
+        <h2 class="text-center mb-2">Our <span class="tropical-accent">Fresh</span> Menu</h2>
+        <p class="text-center text-muted mb-5">Select your favourites.</p>
+
+        <h4 class="mb-4  m-2 border-bottom pb-2"><i class="fas fa-leaf text-success me-2"></i> Traditional & Roots</h4>
+        <div class="row g-4 mb-5">
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="card category-card h-100">
+                    <img src="images/juices.jpg" class="card-img-top" alt="Sorrel">
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold mb-1">Sorrel</h5>
+                        <p class="small text-muted mb-3">Traditional spiced hibiscus.</p>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <!--<span class="badge bg-success">Non-Alcoholic</span>
+                            <span class="badge bg-danger">Alcoholic Available</span>-->
+                        </div>
+                 <a href="https://wa.me/18683905485?text=I'm%20interested%20in%20ordering%20J%26J%20Fresh%20Juices!" 
+   class="btn btn-caribbean w-100" 
+   target="_blank">
+   <i class="fab fa-whatsapp me-2"></i> Contact To Order
+</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card category-card h-100">
+                    <img src="images/juices2.jpg" class="card-img-top" alt="Mauby">
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold mb-1">Mauby</h5>
+                        <p class="small text-muted mb-3">The authentic bark brew.</p>
+                 <a href="https://wa.me/18683905485?text=I'm%20interested%20in%20ordering%20J%26J%20Fresh%20Juices!" 
+   class="btn btn-jj-primary rounded-pill w-100" 
+   target="_blank">
+   <i class="fab fa-whatsapp me-2"></i> Contact To Order
+</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card category-card h-100">
+                    <img src="images/juices.jpg" class="card-img-top" alt="Ginger">
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold mb-1">Ginger Beer</h5>
+                        <p class="small text-muted mb-3">Extra spicy cold-pressed ginger root kick.</p>
+                          <a href="https://wa.me/18683905485?text=I'm%20interested%20in%20ordering%20J%26J%20Fresh%20Juices!" 
+   class="btn btn-caribbean w-100" 
+   target="_blank">
+   <i class="fab fa-whatsapp me-2"></i> Contact To Order
+</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h4 class="mb-4 border-bottom pb-2"><i class="fas fa-sun text-warning me-2"></i> Tropical Classics</h4>
+        <div class="row g-4 mb-5">
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="card category-card h-100">
+                    <img src="images/juices2.jpg" class="card-img-top" alt="Fruit Punch">
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold mb-1">Island Fruit Punch</h5>
+                        <p class="small text-muted mb-3">A medley of tropical fruits. The ultimate crowd-pleaser.</p>
+                  <a href="https://wa.me/18683905485?text=I'm%20interested%20in%20ordering%20J%26J%20Fresh%20Juices!" 
+   class="btn btn-jj-primary rounded-pill w-100" 
+   target="_blank">
+   <i class="fab fa-whatsapp me-2"></i> Contact To Order
+</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card category-card h-100">
+                    <img src="images/juices.jpg" class="card-img-top" alt="Orange Pine">
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold mb-1">Orange Pine</h5>
+                        <p class="small text-muted mb-3">Sweet pineapple meets zesty citrus orange.</p>
+                      <a href="https://wa.me/18683905485?text=I'm%20interested%20in%20ordering%20J%26J%20Fresh%20Juices!" 
+   class="btn btn-caribbean w-100" 
+   target="_blank">
+   <i class="fab fa-whatsapp me-2"></i> Contact To Order
+</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card category-card h-100">
+                    <img src="images/juices2.jpg" class="card-img-top" alt="Pure Citrus">
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold mb-1">Pure Citrus (Orange or Grapefruit)</h5>
+                        <p class="small text-muted mb-3">Choose between 100% Orange or Ruby Red Grapefruit.</p>
+                        <a href="https://wa.me/18683905485?text=I'm%20interested%20in%20ordering%20J%26J%20Fresh%20Juices!" 
+   class="btn btn-jj-primary rounded-pill w-100" 
+   target="_blank">
+   <i class="fab fa-whatsapp me-2"></i> Contact To Order
+</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+       <!-- The New Lemonade Stand -->
+       <h4 class="mb-4 border-bottom pb-2 d-flex align-items-center">
+    <i class="fas fa-glass-lemonade text-info me-2"></i> 
+    The <span class="ms-2 tropical-accent" style="color: #00B4D8;">Lemonade Stand</span>
+</h4>
+
+<div class="row g-4">
+    <div class="col-lg-6" data-aos="fade-right">
+        <div class="card category-card h-100 border-0 shadow-sm" style="background: linear-gradient(135deg, #fff 60%, #ffeef2 100%);">
+            <div class="row g-0 h-100">
+                <div class="col-4">
+                    <img src="images/juices.jpg" class="img-fluid h-100 object-fit-cover" alt="Sorrel Lemonade" style="min-height: 200px;">
+                </div>
+                <div class="col-8">
+                    <div class="card-body d-flex flex-column h-100">
+                        <h5 class="fw-bold text-danger">Sorrel Lemonade</h5>
+                        <p class="small text-muted flex-grow-1">The perfect marriage of tart lemon and spiced hibiscus. A deep ruby refresher.</p>
+                        
+                        <!--<div class="btn-group btn-group-sm mb-3" role="group">
+                            <input type="radio" class="btn-check" name="sorrel-type" id="sorrel-v" checked>
+                            <label class="btn btn-outline-secondary" for="sorrel-v">Virgin</label>
+                            <input type="radio" class="btn-check" name="sorrel-type" id="sorrel-s">
+                            <label class="btn btn-outline-danger" for="sorrel-s">Spiked</label>
+                        </div>-->
+                          <a href="https://wa.me/18683905485?text=I'm%20interested%20in%20ordering%20J%26J%20Fresh%20Juices!" 
+   class="btn btn-danger rounded-pill" 
+   target="_blank"><i class="fab fa-whatsapp me-2"></i> Try it today</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-6">
+        <div class="row g-3">
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="card category-card border-0 shadow-sm p-3" style="background: #fffafa;">
+                    <h6 class="fw-bold mb-1">Grapefruit Lemonade</h6>
+                    <p class="x-small text-muted mb-2">Zesty & Slightly Bitter</p>
+                    <div class="d-flex justify-content-between align-items-center mt-auto">
+                        <!--<span class="small fw-bold">$7.99</span>-->
+                 <a href="https://wa.me/18683905485?text=I'm%20interested%20in%20ordering%20J%26J%20Fresh%20Juices!" 
+   class="btn btn-sm btn-jj-primary rounded-pill px-3" 
+   target="_blank">
+   <i class="fab fa-whatsapp me-2"></i> Contact To Order
+</a>           
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="card category-card border-0 shadow-sm p-3" style="background: #fffcf5;">
+                    <h6 class="fw-bold mb-1">Orange Lemonade</h6>
+                    <p class="x-small text-muted mb-2">Sweet, Sunny & Smooth</p>
+                    <div class="d-flex justify-content-between align-items-center mt-auto">
+                        <!--<span class="small fw-bold">$7.99</span>-->
+                                <a href="https://wa.me/18683905485?text=I'm%20interested%20in%20ordering%20J%26J%20Fresh%20Juices!" 
+   class="btn btn-sm btn-jj-primary rounded-pill px-3" 
+   target="_blank">
+   <i class="fab fa-whatsapp me-2"></i> Contact To Order
+</a>              
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12" data-aos="fade-up" data-aos-delay="300">
+                <div class="card category-card border-0 shadow-sm p-3" style="background: #f5fff9; border-left: 5px solid var(--caribbean-green) !important;">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="fw-bold mb-0">Orange Pine Lemonade</h6>
+                            <small class="text-muted">The Ultimate Tropical Mix</small>
+                        </div>
+                        <div class="text-end">
+                          <!--<span class="badge bg-warning text-dark mb-1">Trending</span>-->
+                            <br>
+                                  <a href="https://wa.me/18683905485?text=I'm%20interested%20in%20ordering%20J%26J%20Fresh%20Juices!" 
+   class="btn btn-caribbean w-100" 
+   target="_blank">
+   <i class="fab fa-whatsapp me-2"></i>Order Now
+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
     <section id="social-proof" class="content-section" style="background-color: #fff;">
     <div class="container text-center">
         <h2 class="mb-2">Follow the <span class="tropical-accent">#JJFreshLife</span></h2>
@@ -333,6 +497,9 @@
             </div>
         </div>
     </footer>
+<a href="https://wa.me/18683905485" class="floating-whatsapp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
 
     <a href="#home" class="floating-home"><i class="fas fa-home"></i></a>
     <a href="#home" id="back-to-top"><i class="fas fa-chevron-up"></i></a>
